@@ -15,6 +15,7 @@ class SingleLinkedList:
             return
         else:
             print("List is: ")
+            p = 0
             p = self.startstartingNode
             while p is not None:
                 print(p.info, " ", end='')
