@@ -7,16 +7,40 @@ class Node:
 class SingleLinkedList:
 
     def __init__(self):
-        self.start = None
+        self.startingNode = None
 
     def display_list(self):
-        pass
+        if self.startingNode is None:
+            print("List is empty")
+            return
+        else:
+            print("List is: ")
+            p = self.startstartingNode
+            while p is not None:
+                print(p.info, " ", end='')
+                p = p.link
+            print()
 
     def count_nodes(self):
-        pass
-
+        p = self.startingNode
+        n = 0
+        while p is not None:
+            n+=1
+            p = p.link
+        print("Number of nodes in the list = ", n)
+    
     def search(self, x):
-        pass
+        position = 1
+        p = self.startingNode
+        while p is not None:
+            if p.info == x:
+                print(x, "is at position", position)
+                return True
+            position+=1
+            p = p.link
+        else: 
+            print(x, "not found in list")
+            return false
 
     def insert_in_beginning(self, data):
         pass
@@ -62,7 +86,7 @@ class SingleLinkedList:
 
     def remove_cycle(self):
         pass
-
+     
     def insert_cycle(self, x):
         pass
 
