@@ -187,31 +187,20 @@
 #    print()
 
 
-class Shark:
 
-    animal_type = "fish"
-    location = "ocean"
 
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
+class SomeClass:
+    variable_1 = "This is a class variable"
+    variable_2 = 100
 
-    def set_followers(self, followers):
-        print("This user has " + str(followers) + " folowers")
+    def __init__(self, param1, param2):
+        self.instance_var1 = param1
+        self.instance_var2 = param2
 
-def main():
+object1 = SomeClass("Some thing", 16)
+object2 = SomeClass(28, 6)
 
-    sammy = Shark("Sammy", 5)
-    print(sammy.name)
-    print(sammy.location)
-
-    stevie = Shark("Stevie", 8)
-    print(stevie.name)
-    stevie.set_followers(77)
-
-if __name__ == "__main__":
-    main()
-
+object1.variable_1
 
 
 
