@@ -186,28 +186,31 @@
 #        print("Wrong option")
 #    print()
 
-class SomeClass:
-    variable_1 = "This is a class variable"
-    variable_2 = 100 #This is also a class variable
 
-    def __init__(self, param1, param2):
-        self.instance_var1 = param1
-        #instance_var1 is a instance variable
-        self.instance_var2 = param2
-        #instance_var2 is a instance variable
+class Shark:
 
-obj1 = SomeClass("some thing", 18)
-obj2 = SomeClass(28, 6)
+    animal_type = "fish"
+    location = "ocean"
 
-print(obj1.variable_1)
-print(obj2.variable_1)
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 
+    def set_followers(self, followers):
+        print("This user has " + str(followers) + " folowers")
 
+def main():
 
+    sammy = Shark("Sammy", 5)
+    print(sammy.name)
+    print(sammy.location)
 
+    stevie = Shark("Stevie", 8)
+    print(stevie.name)
+    stevie.set_followers(77)
 
-
-
+if __name__ == "__main__":
+    main()
 
 
 
