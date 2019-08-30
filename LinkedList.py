@@ -189,18 +189,18 @@
 
 
 
-class SomeClass:
-    variable_1 = "This is a class variable"
-    variable_2 = 100
+class Car():
+    def exclaim(self):
+        print("I am a car")
+    pass
 
-    def __init__(self, param1, param2):
-        self.instance_var1 = param1
-        self.instance_var2 = param2
+class Yugo(Car):
+    pass
 
-object1 = SomeClass("Some thing", 16)
-object2 = SomeClass(28, 6)
+object1 = Car()
+object2 = Yugo()
 
-object1.variable_1
+object2.exclaim()
 
 
 
