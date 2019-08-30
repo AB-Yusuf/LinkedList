@@ -189,20 +189,15 @@
 
 
 
-class Car():
-    def exclaim(self):
-        print("I am a car")
-    pass
-
-class Yugo(Car):
-    pass
-
-object1 = Car()
-object2 = Yugo()
-
-object2.exclaim()
-
-
+class Duck():
+    def __init__(self, input_name):
+        self.hidden_name = input_name
+    def get_name(self):
+        print('Inside the getter')
+    def set_name(self, input_name):
+        print('Inside the setter')
+        self.hidden_name = input_name
+        name = poper
 
 
 
